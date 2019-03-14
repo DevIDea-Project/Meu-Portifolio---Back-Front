@@ -31,7 +31,7 @@
         });
 
         $curriculo.addEventListener('click', function(){
-            alert('Na proxima pagina você poderá baixar o curriculo e ter acesso a informações profissionais sobre Bruno Vinicius.');
+                alert('Na proxima pagina você poderá baixar o curriculo e ter acesso a informações profissionais sobre Bruno Vinicius. Existem dois tipos de currículo, na próxima página: O gráfico em PDF e o Vitae em Word.');
         });
 
         $linkdin.addEventListener('click', function(event){

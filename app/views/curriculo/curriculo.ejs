@@ -4,8 +4,8 @@
 		<title>Informações Profissionais</title>
 		<meta charset="utf-8">
 	    <link rel="stylesheet" type="text/css" href="/styles/bootstrap.min.css"/>
-    	<link rel="stylesheet" type="text/css" href="/styles/curriculo.css"/>
-	</head>
+        <link rel="stylesheet" type="text/css" href="/styles/curriculo.css"/>
+    </head>
 	<body>
         <block>   
             <div class="wrap">  
@@ -91,11 +91,27 @@
 
                         <div class="head">
                         
-                            <h3 id="cur"> Currículo e Dowloand: </h3>
+                            <h3 id="cur"> Currículo Gráfico PDF: </h3>
 
                             <iframe src="img/Bruno - Curriculo.pdf" id="curriculo">
 
                             </iframe>
+
+                            
+                            <div id="TextCurriculo" class="container">
+                                <h1>Curriculo Vitae Word</h1>
+                                <b id="paragrafo"> 
+                                    Coloquei a opção de fazer o download em word, facilita na hora da entrevista.
+                                    Assim no próprio computador o entrevistador pode fazer as alterações, colocar perguntas e outras
+                                    dúvidas. Sendo assim não vai precisar imprimir o currílo, logo não usará papel, nem 
+                                    tinta da impressora. O meio ambiemte agradece! Currículo Vitae Clique no botão ao lado => 
+								</b>
+                            </div>
+                            <a href="img/Vitae.docx" download="Currículo Bruno" class="curriculo">Baixar Currículo</a>
+                            
+                            <!--<button src="img/Vitae.docx" id="btnCurriculo" download="img/Vitae.docx" href="img/Vitae.docx">
+                                Baixar o currículo em Word.
+                               </button> -->
                         </div>
             </section> 
                 <div id="estatisticas">
@@ -106,6 +122,7 @@
                     </div>
                 </div>
         </block>
+        <script src="js/curriculo.js"></script>
         <script src="/js/jquery.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
       </div>	
