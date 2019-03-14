@@ -1,0 +1,454 @@
+@font-face{
+font-family: 'OpenSans-Light';
+src: url ("../fontes/OpenSans-Regular.ttf");
+font-size: 1em;
+}
+@font-face{
+font-family: 'OpenSans';
+src: url ("../fontes/OpenSans-Light.ttf");
+font-size: 1em;
+}
+
+body, html {height:100%;}
+
+div.wrap {
+height:200%; 
+overflow:hidden;
+}
+
+header {
+width: 100%;
+height: 100px;
+background-color: #2c3e50;
+position: relative;
+}
+header .container{
+position: relative;
+left: 45px;
+top: -45px;
+}
+
+header .container #menu{
+position: relative;
+left: 800px;
+top: 4px;
+}
+
+header .header-black{
+background-color:#bdc3c7;
+height: 15px; 
+
+}
+header .header-black li {
+background-image: url("../img/clubs.png");
+background-repeat: no-repeat; 
+display: inline-block;
+margin: 4px;
+
+}
+header .header-black li a {
+width: 32px;
+height: 32px;
+display: block;
+
+}
+header #logotipo {
+position: absolute;
+top: 25px;
+}
+header #loguinho01{
+
+width: 200px;
+height: 60px;
+position: relative;
+top: 12px;
+left: 30px;
+}
+
+#menu li {
+display: inline-block;
+font-family: 'Open-Sans';
+
+}
+#menu {
+margin: 11px 0; 
+}
+#menu li.search{
+width: 182px;
+
+}
+#menu li.search input {
+background-color: #34495e;
+color: #FFF;
+border: none;
+height: 30px;
+line-height: 30px;
+}
+#menu li.search ::-webkit-input-placeholder{
+color: #FFF;
+}
+#menu li.search button {
+background: none; 
+border: none;
+position: absolute;
+top: 7px;
+}
+#menu li.search button i {
+font-size: 14px;
+color: rgb(255,255,255, .5);
+position: relative;
+left: -26px;
+z-index: 2;
+}
+#menu li a{
+color: #FFF; 
+font-size: 16px;
+padding: 10px 25px; 
+}
+
+
+#menu li.search .input-group{
+top:8px;
+}
+#banner {
+width: 100%;
+height:303px;
+position: initial;
+background: url("../img/banner1.jpg");
+background-position: 350px 0px;
+top: 6px;
+}
+#banner h1 {
+color:  #ffffff;
+top:156px;
+position: relative;
+font-size: 92px;
+text-shadow: 2px 2px 2px rgb(0,0,0, .45);
+font-family: "OpenSans-Light";
+margin-left: 14px; 
+}
+
+#banner h1 small{
+font-size: 32px;
+display: block;
+color:  #ffffff;
+font-family: "OpenSans";
+font-weight: bold;
+margin-left: 50px;
+}
+#news {
+
+position: relative;
+top: -15px;
+}
+
+#news h2{
+color:#2c3e50;
+font-family: 'OpenSans-Light';
+font-size: 28px;
+text-transform: uppercase;	
+text-align: center;
+position: relative;
+top: 50px;
+left: 445px;
+}
+
+#news h3{
+
+color: #2c3e50;
+font-family: 'OpenSans-Light';
+font-size: 28px;
+text-transform: uppercase;	
+text-align: center;
+position: relative;
+top: 180px;
+left: 307px;
+
+}
+
+#news h4{
+
+color: #2c3e50;
+font-family: 'OpenSans-Light';
+font-size: 28px;
+text-transform: uppercase;	
+text-align: center;
+position: relative;
+top: 645px;
+left: -35px;
+
+}
+#news hr{
+
+border:#FDE192 solid 2px;
+width: 200px;
+margin: 0 auto;
+position: relative;
+top: -48px;
+}
+
+#news hr{
+
+border:#FDE192 solid 2px;
+width: 200px;
+margin: 0 auto;
+position: relative;
+top: 30px;
+}
+
+#news .thumbnails{
+margin-top: 90px;
+}
+
+#news p{
+color: #2c3e50;
+font-size: 19px;
+font-family: 'Open-Sans';
+font-weight: bold;
+position: relative;
+top: 70px;
+
+}
+#cabecalio #cinema {
+width: 7%;
+height: 50px;
+position: relative;
+left: 205px;
+top: 205px;
+}
+
+#cabecalio #cine{
+color: #2c3e50;
+font-size: 20px;
+font-family: 'Open-Sans';
+font-weight: bold;
+position: relative;
+top: 218px;
+left: 191px;
+}
+
+#cabecalio #programação {
+width: 7%;
+height: 50px;
+position: relative;
+left: 490px;
+top: 110px;
+}
+
+#cabecalio #prog{
+color: #2c3e50;
+font-size: 20px;
+font-family: 'Open-Sans';
+font-weight: bold;
+position: relative;
+top: 122px;
+left: 460px;
+}
+
+#cabecalio #game {
+width: 10%;
+height: 83px;
+position: relative;
+left: 750px;
+top: -2px;
+}
+
+#cabecalio #gam{
+color: #2c3e50;
+font-size: 20px;
+font-family: 'Open-Sans';
+font-weight: bold;
+position: relative;
+top: -8px;
+left: 766px;
+}
+
+#cabecalio #music {
+width: 10%;
+height: 76px;
+position: relative;
+left: 1004px;
+top: -133px;
+}
+#cabecalio #mus{
+color: #2c3e50;
+font-size: 20px;
+font-family: 'Open-Sans';
+font-weight: bold;
+position: relative;
+top: -130px;
+left: 1041px;
+}
+
+
+#cabecalio #whatsapp {
+width: 6%;
+height: 56px;
+position: relative;
+left: 167px;
+top: 215px;
+}
+
+#cabecalio #what{
+color: #2c3e50;
+font-size: 16px;
+font-family: 'Open-Sans';
+font-weight: bold;
+position: relative;
+top: 175px;
+left: 253px;
+}
+
+#cabecalio #gmail {
+width: 4%;
+height: 40px;
+position: relative;
+left: 423px;
+top: 127px;
+}
+#cabecalio #gma{
+color: #2c3e50;
+font-size: 16px;
+font-family: 'Open-Sans';
+font-weight: bold;
+position: relative;
+top: 95px;
+left: 492px;
+}
+
+#cabecalio #linkdin {
+width: 3%;
+height: 34px;
+position: relative;
+left: 688px;
+top: 50px;
+}
+#cabecalio #lin{
+color: #2c3e50;
+font-size: 16px;
+font-family: 'Open-Sans';
+font-weight: bold;
+position: relative;
+top: 21px;
+left: 750px;
+}
+
+#cabecalio #instagram {
+width: 3%;
+height: 34px;
+position: relative;
+left: 999px;
+top: -24px;
+}
+
+#cabecalio #insta{
+color: #2c3e50;
+font-size: 16px;
+font-family: 'Open-Sans';
+font-weight: bold;
+position: relative;
+top: -55px;
+left: 1058px;
+}
+
+#cabecalio #cafe{
+
+width: 10%;
+height: 93px;
+position: relative;
+left: 191px;
+top: -410px;
+}
+
+#cabecalio #caf{
+color: #2c3e50;
+font-size: 20px;
+font-family: 'Open-Sans';
+font-weight: bold;
+position: relative;
+top: -390px;
+left: 228px;
+}
+
+#cabecalio #netflix{
+
+width: 10%;
+height: 93px;
+position: relative;
+left: 463px;
+top: -529px;
+}
+
+#cabecalio #flix{
+color: #2c3e50;
+font-size: 20px;
+font-family: 'Open-Sans';
+font-weight: bold;
+position: relative;
+top: -529px;
+left: 473px;
+}
+
+#cabecalio #livro{
+
+width: 9%;
+height: 80px;
+position: relative;
+left: 750px;
+top: -662px;
+}
+
+#cabecalio #leitura{
+color: #2c3e50;
+font-size: 20px;
+font-family: 'Open-Sans';
+font-weight: bold;
+position: relative;
+top: -655px;
+left: 780px;
+}
+#cabecalio #food{
+
+width: 11%;
+height: 82px;
+position: relative;
+left: 999px;
+top: -786px;
+}
+#cabecalio #comida{
+color: #2c3e50;
+font-size: 20px;
+font-family: 'Open-Sans';
+font-weight: bold;
+position: relative;
+top: -783px;
+left: 1038px;
+}
+
+#estatisticas {
+
+background-color: #2c3e50;
+width: 100%;
+height: 80px;
+text-align: center;
+position: relative;
+top: 0px;	
+}
+#estatisticas p{
+
+color: #FDE092;
+text-transform: uppercase;
+font-family: 'OpenSans-Light';
+font-size: 64px;
+margin-top: 36px;
+}
+
+#estatisticas p small {
+
+color: #FFF;
+font-size: 24px;
+display: block;	
+}
+
+
+
