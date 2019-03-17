@@ -8,22 +8,22 @@
      let $divSpan   = document.getElementById('divSpan');
      let maxima = $txtMsg.maxLength;
 
+      $resta.textContent = maxima;
 
-     $resta.textContent = maxima;
-
-     $divSpan.style.display = 'block';
+      $divSpan.style.display = 'block';
         
-     /** Passando uma função keypress para o evento do teclado */
-     $txtMsg.addEventListener('input', checkLength);
+      /** Passando uma função keypress para o evento do teclado */
+      $txtMsg.addEventListener('input', checkLength);
 
-     function checkLength(event){
+      function checkLength(event){
         event.stopPropagation();
         let QtdLetras = this.value.length;
         $resta.textContent = maxima - QtdLetras;
-     }
+      }
 
-     $btnEnviar.addEventListener('submit', function(event){
+      $btnEnviar.addEventListener('submit', function(event){
         event.stopPropagation();
+        alert('Dados enviados com sucesso!');
         
-     });
+      });
 })();
