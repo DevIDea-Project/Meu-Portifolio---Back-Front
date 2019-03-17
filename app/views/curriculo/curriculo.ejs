@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="/styles/curriculo.css"/>
     </head>
 	<body>
+
         <block>   
             <div class="wrap">  
                 <header>
@@ -143,6 +144,16 @@
                         </div>
                     </div>
                 </div>
+                <table>
+                    <% for(var i = 0; i < curriculo.length; i++) { %>
+                        <tr>
+                            <td><%= curriculo[i].idInformacao %></td>
+                            <td><%= curriculo[i].nome %></td>
+                            <td><%= curriculo[i].email %></td>
+                            <td><%= curriculo[i].mensagem %></td>
+                        </tr>
+                    <% } %>    
+                  </table>
         </block>
         <script src="js/curriculo.js"></script>
         <script src="/js/jquery.min.js"></script>

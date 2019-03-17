@@ -3,6 +3,7 @@ const path = require("path"); //Pesquisar sobre o path Express
 const app = express();
 const bodyParser = require('body-parser');
 
+
 app.set("views", path.join(__dirname, "./app/views"));
 app.set("view engine", "ejs");
 

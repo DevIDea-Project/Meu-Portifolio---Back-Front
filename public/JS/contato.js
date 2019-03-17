@@ -12,6 +12,7 @@
         alert('Na próxima página você poderá baixar o curriculo e ter acesso as informações profissionais sobre Bruno Vinicius. Existem dois tipos de currículo, na próxima página: O gráfico em PDF e o Vitae em Word.');
     });
     
+    
     $linkdin.addEventListener('click', function(event){
          event.stopPropagation();
          window.open('https://linkedin.com/in/bruno-vinicius-459a34127/');
