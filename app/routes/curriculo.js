@@ -1,20 +1,25 @@
-module.exports = function (app) {
+var dbConnection = require('../../config/dbConnection');
+var curriculoModels = require('../../app/models/curriculoModels');
 
-    app.get('/curriculo', (req, res) => {
-        const mysql = require('mysql');
 
-        var connection = mysql.createConnection({
-            host:'localhost',
-            user:'root',
-            password:'',
-            database:'PortifolioDB'
-        });
+module.exports = function(application) {
 
-        connection.query('select * from informacao', function(error, result){
-             //res.send(result);
-             res.render("curriculo/curriculo", {curriculo: result});
-        });
+    application.get('/curriculo', function (req, res){
+        res.render("curriculo/curriculo");
+    });
+
+    application.post('/curriculo/salvar', function(req, res){
+        var mensagem = req.body;
+        //res.send(mensagem); 
+        
+        var connection = dbConnection();
+        var curriculoModel = curriculoModels();
 
         
+        curriculoModel.salvarNoticia(mensagem, connection, function(error, result){
+            res.redirect('/curriculo');
+        });
     });
-};
+}; 
+
+

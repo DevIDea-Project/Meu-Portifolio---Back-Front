@@ -2,10 +2,10 @@
       
     'use strict';
     
-    const $linkdin    = document.getElementById('linkdin');
-    const $instagram  = document.getElementById('instagram');
-    const $gmail      = document.getElementById('gmail');
-    const $curriculo  = document.getElementById('curriculo');
+    let $linkdin    = document.getElementById('linkdin');
+    let $instagram  = document.getElementById('instagram');
+    let $gmail      = document.getElementById('gmail');
+    let $curriculo  = document.getElementById('curriculo');
     
 
     $curriculo.addEventListener('click', function(){
@@ -25,7 +25,7 @@
 
     $gmail.addEventListener('click', function(event){
         event.stopPropagation();
-        window.open('https://mail.google.com/mail/u/1/#inbox/');
+        window.open('mailto: https://mail.google.com/mail/u/1/#inbox/');
     });
 
 

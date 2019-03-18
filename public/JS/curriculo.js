@@ -24,6 +24,5 @@
       $btnEnviar.addEventListener('submit', function(event){
         event.stopPropagation();
         alert('Dados enviados com sucesso!');
-        
       });
 })();

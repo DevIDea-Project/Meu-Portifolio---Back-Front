@@ -7,17 +7,18 @@
     let $img3     = document.getElementById('Angular');
     let $img4     = document.getElementById('html');  
     let $curriculo = document.getElementById('curriculo');
-    let $linkdin   = document.getElementById('linkdin');
+    let $Contato = document.getElementById('contato');
+    
     let $txtJava   = document.getElementById('txtjava');
 
         $img1.addEventListener('click', function(event){
                 event.stopPropagation();
-                window.open('https://github.com/brunoViniciusTiCa/JAVA-Biblioteca-Projeto-POO');
+                window.open('https://github.com/brunoViniciusTiCa/Meu-Portifolio---Back-Front');
         });
         
         $img2.addEventListener('click', function(event){
                 event.stopPropagation();
-                window.open('https://github.com/brunoViniciusTiCa/Projeto-Node');
+                window.open('https://github.com/brunoViniciusTiCa/API---CRUD-Acad-mico-');
         });
         
         $img3.addEventListener('click', function(event){
@@ -34,14 +35,14 @@
                 alert('Na próxima página você poderá baixar o curriculo e ter acesso as informações profissionais sobre Bruno Vinicius. Existem dois tipos de currículo, na próxima página: O gráfico em PDF e o Vitae em Word.');
         });
 
-        $linkdin.addEventListener('click', function(event){
-            event.stopPropagation();
-            window.open('https://www.linkedin.com/in/bruno-vinicius-459a34127/');
-        });
-
         $txtJava.addEventListener('click', function(){
             event.stopPropagation();
             window.open('https://github.com/brunoViniciusTiCa/JAVA-Biblioteca-Projeto-POO');
+        });
+
+        $Contato.addEventListener('click', function(event){
+           event.stopPropagation();
+           alert('Clique nos ícones: Linkdin, Instagram e Gmail! Logo será direcionado para estás redes sociais.');
         });
 
 })();

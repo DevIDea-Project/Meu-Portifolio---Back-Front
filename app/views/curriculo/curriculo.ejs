@@ -103,10 +103,14 @@
                             <div id="TextCurriculo" class="container">
                                 <h1>Curriculo Vitae em Word</h1>
                                 <b id="paragrafo"> 
-                                    Coloquei a opção de fazer o download em word, facilita na hora da entrevista.
-                                    Assim no próprio computador o entrevistador pode fazer as alterações, colocar perguntas e outras
-                                    dúvidas. Sendo assim não vai precisar imprimir o currílo, logo não usará papel, nem 
-                                    tinta da impressora. O meio ambiemte agradece! Currículo Vitae Clique no botão ao lado => 
+                                        Coloquei duas opções para fazer o download: word e PDF. Pensei nas duas formas para 
+                                        ter acesso a meu currículo. Vou explicar por qual motivo, fiz desta forma. Vi nos 
+                                        entrevistadores uma necessidade de imprimir o currículo e no mesmo(currículo) 
+                                        fazer: observações, perguntas e sempre escrever no currículo. Então coloquei a 
+                                        opção do meu currículo em word, logo o arquivo pode ficar no computador, então o 
+                                        entrevistador abrirá o arquivo e no seu próprio computador ele vai digitando e
+                                        fazendo suas indagações. Na hora da entrevista ele não vai precisar ter o currículo 
+                                        impresso, só se ele sentir a necessidade. Aqui está o arquivo em word =>
 								</b>
                             </div>
                             <a href="img/Vitae.docx" download="Currículo Bruno" class="curriculo">Baixar Currículo</a>
@@ -114,22 +118,22 @@
                
 
                         <div id="formulario">
-                            <form>
-                                <h1 id="aviso"> Deixe sua opnião, para fazermos melhoria no site:</h1>
+                            <form action="/curriculo/salvar" method="post">
+                                <h1 id="aviso"> Deixe sua opnião, para fazermos melhorias no site:</h1>
                                 <fieldset>
                                   
                                   <div class="form-group">
                                     <label for="disabledTextInput" style="color:#2c3e50;">Nome</label>
-                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Digite aqui seu nome:" maxlength="20">
+                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Digite aqui seu nome:" maxlength="20" name="nome">
                                   </div>
                                   <div class="form-group">
                                     <label for="disabledTextInput" style="color:#2c3e50;">E-mail</label>
-                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Digite aqui seu E-mail:" maxlength="40">
+                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Digite aqui seu E-mail:" maxlength="40" name="email">
                                   </div>
                                     <label for="disabledTextInput" style="color:#2c3e50;">Mensagem:</label>
-                                    <textarea id="textarea" maxlength="400" placeholder="Digite aqui sua mensagem:"></textarea>
+                                    <textarea id="textarea" maxlength="400" placeholder="Digite aqui sua mensagem:" name="mensagem"></textarea>
                                     <div id="divSpan" style="display: none;">
-                                            Restam <span id="resta"></span> Caracteres 
+                                            Máximo <span id="resta"></span> Letras 
                                     </div>
                                     <button class="btn btn-primary" id="btnEnviar">Enviar</button>
                                 </fieldset>
@@ -144,16 +148,6 @@
                         </div>
                     </div>
                 </div>
-                <table>
-                    <% for(var i = 0; i < curriculo.length; i++) { %>
-                        <tr>
-                            <td><%= curriculo[i].idInformacao %></td>
-                            <td><%= curriculo[i].nome %></td>
-                            <td><%= curriculo[i].email %></td>
-                            <td><%= curriculo[i].mensagem %></td>
-                        </tr>
-                    <% } %>    
-                  </table>
         </block>
         <script src="js/curriculo.js"></script>
         <script src="/js/jquery.min.js"></script>
