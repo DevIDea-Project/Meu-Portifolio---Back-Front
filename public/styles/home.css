@@ -162,6 +162,8 @@ top: 90px;
 left: 390px;
 }
 
+
+
 #news hr{
 border:#FDE192 solid 2px;
 width: 260px;
@@ -220,7 +222,7 @@ color: #FDE092;
 text-transform: uppercase;
 font-family: 'OpenSans-Light';
 font-size: 64px;
-margin-top: 36px;
+margin-top: 20px;
 }
 
 #estatisticas p small {

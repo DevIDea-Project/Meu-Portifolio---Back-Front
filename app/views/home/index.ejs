@@ -3,8 +3,10 @@
     <head>
          <title> Portifolio Bruno </title>
 		 <meta charset="utf-8">
+		 <meta name="viewport" content="width: device-width, initial-scale=1, user-scalable=no">
 		 <link rel="stylesheet" type="text/css" href="/styles/bootstrap.min.css"/>
-    	 <link rel="stylesheet" type="text/css" href="/styles/home.css"/>
+		 <link rel="stylesheet" type="text/css" href="/styles/home.css"/>
+		 <link rel="stylesheet" type="text/css" href="/styles/indexMobli.css"/>
 	</head>
     <body>
 
@@ -48,25 +50,25 @@
 						<div class="col-md-3">
 							<img id="java1" src="/img/nodeEjS.jpg" alt="Noticia" style="cursor:pointer">
 							<h3 id="txtjava">Código deste site Portifolio, lá onde trabalhei o back-end e o front-end da aplicação.Usando NodeJs, Express, EJS e outras tecnologias.</h3>
-							<time>Janeiro 06, 2019</time>
+							<time id="time1">Janeiro 06, 2019</time>
 						</div>
 						
 						<div class="col-md-3">
 							<img id ="node" src="/img/nodinho.jpeg" alt="Noticia" style="cursor:pointer">
-							<h3>API - CRUD para projeto universitário. Conectando com o banco de Dados Relacional, Mysql. CREAT, READ, UPDATE e DELETE</h3>
-							<time>Março 08, 2019</time>
+							<h3 id="txtnode">API - CRUD para projeto universitário. Conectando com o banco de Dados Relacional, Mysql. CREAT, READ, UPDATE e DELETE</h3>
+							<time id="time2">Março 08, 2019</time>
 						</div>
 						
 						<div class="col-md-3">
 							<img id="Angular" src="/img/Angular.jpg" alt="Noticia" style="cursor:pointer">
-							<h3>Projeto desenvolvido para uma burgueria, usando o modelo padrão para organização do banco a Tela!</h3>
-							<time>Novembro 20, 2018</time>
+							<h3 id="txtangular">Curso de Angular na Udemy, Tela de Login. Ainda está em desenvolvimento.</h3>
+							<time id="time3">Novembro 20, 2018</time>
 						</div>
 
 						<div class="col-md-3">
-							<img id="html" src="/img/javascript.png" alt="Noticia" style="cursor:pointer">
-							<h3>Exercicios em JavaScript que fui desenvolvendo com assuntos principais sobre JS</h3>
-							<time>Janeiro 19, 2019</time>
+							<img id="js" src="/img/javascript.png" alt="Noticia" style="cursor:pointer">
+							<h3 id="txtjs">Exercicios em JavaScript que fui desenvolvendo com assuntos principais sobre JS</h3>
+							<time id="time4">Janeiro 19, 2019</time>
 						</div>
 					</div>
 				</div>	
@@ -76,14 +78,14 @@
 					<div class = "container">
 						<div class="row">
 							
-							<div class="col-md-4">
+							<div id="data" class="col-md-4">
 								<p>2019 <small> Criação do Site </small></p>
 							</div>
 
-							<div class="col-md-4">
+							<div id="projetos" class="col-md-4">
 								<p> 11 <small> Projetos  </small></p>
 							</div>
-							<div class="col-md-4">
+							<div id ="formacao"class="col-md-4">
 								<p> 2020 <small> Ano de Formação </small></p>
 							</div>
 						
@@ -93,6 +95,11 @@
 			</section>
 		</div>	
 	</block> 
+	<div>
+		<div class="footer">
+			
+		</div>
+	</div>
 	<script src="/js/index.js"></script>
 	<script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>

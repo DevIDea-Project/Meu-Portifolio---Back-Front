@@ -16,8 +16,6 @@ consign()
      .then('app/models')
      .into(app)
 
-
-
 app.use(express.static(__dirname + "public"));
 app.use("/img", express.static(__dirname + "/public/img"));
 app.use("/js", express.static(__dirname + "/node_modules/bootstrap/dist/js"));
