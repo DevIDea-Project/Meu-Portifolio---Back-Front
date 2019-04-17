@@ -1,7 +1,187 @@
-@media only screen and (max-width: 768px){
-
+/* Depositivos celulares */
+@media only screen and (max-width: 375px){
+body, html {
+height:100%;
 }
 
-@media only screen and (max-width: 375px){
-    
+div.wrap {
+height:255%; 
+overflow:hidden;
+}
+header #loguinho01 {
+width: 137px;
+height: 47px;
+position: inherit;
+top: 5px;
+left: 123px;
+}
+
+header .container {
+position: relative;
+left: -351px;
+top: -13px;
+}
+
+header .container #menu {
+position: relative;
+left: 343px;
+top: 10px;
+}
+
+#banner {
+width: 100%;
+height: 206px;
+position: initial;
+background: url(../img/banner1.jpg);
+background-position: 386px 0px;
+top: 6px;
+}
+
+section .header h1 {
+height: 55px;
+width: 50%;
+left: 81px;
+position: relative;
+top: 20px;
+color: #2c3e50;
+}
+#news h2 {
+color: #2c3e50;
+font-family: 'OpenSans-Light';
+font-size: 30px;
+text-transform: uppercase;
+text-align: center;
+position: relative;
+top: 90px;
+left: 20px;
+}
+
+section .container #h2 {
+height: 80px;
+width: 62%;
+color: #2c3e50;
+position: relative;
+left: 72px;
+top: 80px;
+font-size: 19px;
+}
+section #Skils {
+height: 80px;
+width: 62%;
+color: #2c3e50;
+position: relative;
+left: 5px;
+top: -12px;
+}
+section #IDE {
+height: 80px;
+width: 62%;
+color: #2c3e50;
+position: relative;
+left: 191px;
+top: -94px;
+}
+
+.container h2{
+font-size: 1rem;
+}
+
+section #formacao {
+height: 80px;
+width: 62%;
+color: #2c3e50;
+position: relative;
+left: 189px;
+top: 300px;
+}
+
+section #Frame {
+height: 80px;
+width: 62%;
+color: #2c3e50;
+position: relative;
+left: 0px;
+top: 60px;
+} 
+
+section .head #TextCurriculo {
+display: none;
+}
+
+section .head #curriculo {
+display: none;
+}
+
+section #aviso {
+font-size: 26px;
+color: #2c3e50;
+width: 132%;
+left: -53px;
+position: relative;
+}
+
+section #textarea {
+width: 151%;
+height: 164px;
+position: relative;
+left: -88px;
+}
+
+#formulario #Nome{
+position: relative;
+left:-82px;
+}
+#formulario .nome{
+position: relative;
+left: -85px;
+width: 145%;
+}
+
+#formulario #email{
+position: relative;
+left:-82px;
+}
+#formulario .email{
+position: relative;
+left: -85px;
+width: 145%;
+}
+
+#formulario #msg{
+position: relative;
+left:-82px;
+}
+
+#formulario #divSpan{
+position: relative;
+left:-82px;
+top:6px;
+}
+
+#formulario #btnEnviar{
+    position: relative;
+    top: -24px;
+    left:77px;
+    width: 70%;
+}
+
+}
+/* Tabletes e Celulares maiores */
+@media only screen and (min-width: 600px) {
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

@@ -6,7 +6,10 @@
     let $instagram  = document.getElementById('instagram');
     let $gmail      = document.getElementById('gmail');
     let $curriculo  = document.getElementById('curriculo');
-    
+    let $gma        = document.getElementById('gma');
+    let $lin        = document.getElementById('lin');
+    let $insta      = document.getElementById('insta');
+
 
     $curriculo.addEventListener('click', function(){
         alert('Na próxima página você poderá baixar o curriculo e ter acesso as informações profissionais sobre Bruno Vinicius. Existem dois tipos de currículo, na próxima página: O gráfico em PDF e o Vitae em Word.');
@@ -17,8 +20,18 @@
          event.stopPropagation();
          window.open('https://linkedin.com/in/bruno-vinicius-459a34127/');
     });
+
+    $lin.addEventListener('click', function(event){
+        event.stopPropagation();
+        window.open('https://linkedin.com/in/bruno-vinicius-459a34127/');
+   });
     
     $instagram.addEventListener('click', function(event){
+        event.stopPropagation();
+        window.open('https://www.instagram.com/viniciustica09/');
+    });
+
+    $insta.addEventListener('click', function(event){
         event.stopPropagation();
         window.open('https://www.instagram.com/viniciustica09/');
     });
@@ -27,6 +40,11 @@
         event.stopPropagation();
         window.open('mailto: https://mail.google.com/mail/u/1/#inbox/');
     });
+
+    $gma.addEventListener('click', function(event){
+        event.stopPropagation(event);
+        window.open('mailto: https://mail.google.com/mail/u/1/#inbox/');
+    })
 
 
 })();

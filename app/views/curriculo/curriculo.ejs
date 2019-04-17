@@ -6,6 +6,8 @@
         <meta name="viewport" content="width: device-width, initial-scale=1, user-scalable=no">
 	    <link rel="stylesheet" type="text/css" href="/styles/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="/styles/curriculo.css"/>
+        <link rel="stylesheet" type="text/css" href="/styles/curriculoMobli.css"/>
+        
     </head>
 	<body>
 
@@ -42,7 +44,7 @@
                             </div>
 
                             <div class="header">
-                                <h1 id="idTitulo"> Informações Profissionais </h1>
+                                <h1 id="idTitulo"> Informações Profissionais: </h1>
                             </div>
 
                         <div class="container">
@@ -51,9 +53,10 @@
                                 
                                     <div id="formacao">
                                         <h2> º Formação </h2>
+                                        <li>Médio Completo</li>
+                                        <li> Informatica Básica - Unibratec</li>
                                         <li>ADS - Cursando </li>
                                         <li>3º periodo</li>
-                                        <li>Ensino Médio Completo</li>
                                         <li>Inglês no Senac - Estudando </li>
                                     </div>  
                                 
@@ -102,10 +105,10 @@
                             <!--<img src="img/BrFoto.png" id="curriculo"> -->
 
                             <div id="TextCurriculo" class="container">
-                                <h1>Curriculo Vitae em Word</h1>
+                                <h1> - Currículo em Word:</h1>
                                 <b id="paragrafo"> 
-                                        Coloquei duas opções para fazer o download: word e PDF. Pensei nas duas formas para 
-                                        ter acesso a meu currículo. Vou explicar por qual motivo, fiz desta forma. Vi nos 
+                                        Coloquei duas opções para fazer o download: Word e PDF. Pensei nas duas formas para 
+                                        ter acesso a meu currículo. Vou explicar por qual motivo. Vi nos 
                                         entrevistadores uma necessidade de imprimir o currículo e no mesmo(currículo) 
                                         fazer: observações, perguntas e sempre escrever no currículo. Então coloquei a 
                                         opção do meu currículo em word, logo o arquivo pode ficar no computador, então o 
@@ -122,19 +125,18 @@
                             <form action="/curriculo/salvar" method="post">
                                 <h1 id="aviso"> Deixe sua opnião, para fazermos melhorias no site:</h1>
                                 <fieldset>
-                                  
                                   <div class="form-group">
-                                    <label for="disabledTextInput" style="color:#2c3e50;">Nome</label>
-                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Digite aqui seu nome:" maxlength="20" name="nome">
+                                    <label id="Nome" for="disabledTextInput" style="color:#2c3e50;">Nome:</label>
+                                    <input class="nome" type="text" id="disabledTextInput" class="form-control" placeholder="Digite aqui seu nome:" maxlength="20" name="nome">
                                   </div>
                                   <div class="form-group">
-                                    <label for="disabledTextInput" style="color:#2c3e50;">E-mail</label>
-                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Digite aqui seu E-mail:" maxlength="40" name="email">
+                                    <label id="email" for="disabledTextInput" style="color:#2c3e50;">E-mail:</label>
+                                    <input class="email" type="text" id="disabledTextInput" class="form-control" placeholder="Digite aqui seu E-mail:" maxlength="40" name="email">
                                   </div>
-                                    <label for="disabledTextInput" style="color:#2c3e50;">Mensagem:</label>
+                                    <label id="msg" for="disabledTextInput" style="color:#2c3e50;">Mensagem:</label>
                                     <textarea id="textarea" maxlength="400" placeholder="Digite aqui sua mensagem:" name="mensagem"></textarea>
                                     <div id="divSpan" style="display: none;">
-                                            Máximo <span id="resta"></span> Letras 
+                                           Máximo de: <span id="resta"></span> Letras 
                                     </div>
                                     <button class="btn btn-primary" id="btnEnviar">Enviar</button>
                                 </fieldset>

@@ -3,7 +3,7 @@ var http = require('http');
 var server = http.createServer(app);
 
 server.listen(8080, () => {
-    console.log("Server ON");
+    console.log("Servidor ON");
 });
 
 const rotaHome = require("./app/routes/home");
