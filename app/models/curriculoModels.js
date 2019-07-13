@@ -1,7 +1,10 @@
+function Mensagem (connection) {
+    this._connection = connection;
+}
+Mensagem.prototype.getsalvarNoticia = function (mensagem, callback){
+    this._connection.query('insert into informacao set ? ', mensagem, callback);
+}
 module.exports = function(){
-    this.salvarNoticia = function (mensagem, connection, callback){
-        connection.query('insert into informacao set ? ', mensagem, callback);
-    }
-    return this;
+    return Mensagem;
 }
 

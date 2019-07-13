@@ -13,7 +13,7 @@ module.exports = function(application) {
         //res.send(mensagem); 
         
         var connection = dbConnection();
-        var curriculoModel = curriculoModels();
+        var curriculoModel = new curriculoModels();
 
         
         curriculoModel.salvarNoticia(mensagem, connection, function(error, result){
